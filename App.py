@@ -76,7 +76,6 @@ if user_result[0] == 0:
 else:
     color = 'red'
 
-# Good old glucose
 st.header('Glucose Value Graph (Yours vs Others)')
 fig_glucose = plt.figure()
 ax3 = sns.scatterplot(x='Age', y='Glucose', data=df, hue='Outcome', palette='Purples')
@@ -86,7 +85,7 @@ plt.yticks(np.arange(0, 250, 20))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_glucose)
 
-# Insulin
+
 st.header('Insulin Value Graph (Yours vs Others)')
 fig_insulin = plt.figure()
 ax9 = sns.scatterplot(x='Age', y='Insulin', data=df, hue='Outcome', palette='rainbow')
@@ -96,7 +95,7 @@ plt.yticks(np.arange(0, 900, 50))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_insulin)
 
-# Famous saying BP
+
 st.header('Blood Pressure Value Graph (Yours vs Others)')
 fig_bp = plt.figure()
 ax5 = sns.scatterplot(x='Age', y='BloodPressure', data=df, hue='Outcome', palette='Blues')
@@ -106,7 +105,7 @@ plt.yticks(np.arange(0, 320, 20))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_bp)
 
-# Did'nt even know this before nutrition training
+
 st.header('BMI Value Graph (Yours vs Others)')
 fig_bmi = plt.figure()
 ax11 = sns.scatterplot(x='Age', y='BMI', data=df, hue='Outcome', palette='Greens')
@@ -116,7 +115,7 @@ plt.yticks(np.arange(0, 75, 5))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_bmi)
 
-# Something new, cool
+
 st.header('DPF Value Graph (Yours vs Others)')
 fig_dpf = plt.figure()
 ax13 = sns.scatterplot(x='Age', y='DiabetesPedigreeFunction', data=df, hue='Outcome', palette='rocket')
@@ -126,7 +125,7 @@ plt.yticks(np.arange(0, 3.2, 0.2))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_dpf)
 
-# Don't even know how thats related to diabetes.The dataset was females only though
+
 st.header('Pregnancy count Graph (Yours vs Others)')
 fig_pregn = plt.figure()
 ax1 = sns.scatterplot(x='Age', y='Pregnancies', data=df, hue='Outcome', palette='magma')
@@ -136,7 +135,7 @@ plt.yticks(np.arange(0, 20, 2))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_pregn)
 
-# Wonder how people measure that
+
 st.header('Skin Thickness Value Graph (Yours vs Others)')
 fig_st = plt.figure()
 ax7 = sns.scatterplot(x='Age', y='SkinThickness', data=df, hue='Outcome', palette='Reds')
